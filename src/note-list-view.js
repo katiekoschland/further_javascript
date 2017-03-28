@@ -7,7 +7,7 @@
   NoteListView.prototype.convertToHTML = function() {
     var list = '<ul>'
     for(var i = 0; i < this.notes.list.length; i ++) {
-    list += '<li><div>' + this.notes.list[i].text + '</div></li>';
+      list += '<li><div>' + this.notes.list[i].text + '</div></li>';
     }
     return list + '</ul>'
   }
@@ -17,6 +17,4 @@
 
 })(this);
 
-
-
-// <ul><li><div>Favourite food: pizza</div></li><li><div><li><div>Favourite drink: diet coke</div></li></ul>
+//helper function recommended by Mary to tidy lines 7-13!
