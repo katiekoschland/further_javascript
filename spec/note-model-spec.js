@@ -7,9 +7,9 @@ var assert = {
 };
 
 
-function testReturnsTheNote() {
+function testReturnsTheNoteText() {
   var note = new Note('message');
-  assert.isTrue(note.returnMessage() == 'message');
+  assert.isTrue(note.returnText() == 'message');
 };
 
-testReturnsTheNote();
+testReturnsTheNoteText();
