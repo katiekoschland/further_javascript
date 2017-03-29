@@ -6,3 +6,12 @@ var assert = {
     else{ console.log("Test Passed")}
   }
 };
+
+function runTwoTests(firstTest, secondTest){
+firstTest;
+secondTest;
+};
+
+function runOneTest(oneTest){
+oneTest;
+};

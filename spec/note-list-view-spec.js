@@ -5,6 +5,7 @@
 // Has a method that, when called, returns a string of HTML that represents the note list model. For example: <ul><li><div>Favourite food: pesto</div></li><li><div>Favourite drink: seltzer</div></li></ul>.
 // Handles a note list model that has no notes, one note or several notes.
 
+runTwoTests( testNoteListViewTakesANoteOnInstantiation(),testNoteListViewCreatesHTMLList());
 
 function testNoteListViewTakesANoteOnInstantiation() {
   var noteList = new NoteList();
@@ -19,6 +20,3 @@ function testNoteListViewCreatesHTMLList() {
   var noteListView = new NoteListView(noteList);
   assert.isTrue(noteListView.convertToHTML() === '<ul><li><div>Favourite food: pizza</div></li><li><div>Favourite drink: diet coke</div></li></ul>');
 };
-
-testNoteListViewTakesANoteOnInstantiation();
-testNoteListViewCreatesHTMLList();
