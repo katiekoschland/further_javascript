@@ -1,7 +1,11 @@
-function NoteController( notelist ){
-  notelist.createNote( "Favourite Colour: red")
-  var notelistview = new NoteListView(notelist)
+(function(exports){
+  function NoteController( notelist ){
+    notelist.createNote( "Favourite Colour: red")
+    var notelistview = new NoteListView(notelist)
 
-  document.getElementById('app').innerHTML = notelistview.convertToHTML()
-
-};
+    NoteController.prototype.generateHTML = function () {
+      document.getElementById('app').innerHTML = notelistview.convertToHTML()
+    };
+  };
+  exports.NoteController = NoteController
+})(this)
