@@ -1,6 +1,4 @@
-runTwoTests(testNoteListHasEmptyArray(),testNoteListCreateAndStoreNotes())
 
-runOneTest(testReturnListOfNotes())
 
 function testNoteListHasEmptyArray() {
   var noteList = new NoteList();

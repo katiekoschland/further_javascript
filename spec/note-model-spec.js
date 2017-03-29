@@ -1,4 +1,4 @@
-runOneTest(testReturnsTheNoteText())
+
 
 function testReturnsTheNoteText() {
   var note = new Note('message');

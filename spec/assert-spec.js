@@ -6,12 +6,14 @@ var assert = {
     else{ console.log("Test Passed")}
   }
 };
+var allTests = []
 
-function runTwoTests(firstTest, secondTest){
-firstTest;
-secondTest;
+function pushArrayOfAllTests(test) {
+  allTests.push(test)
 };
 
-function runOneTest(oneTest){
-oneTest;
+function runAllTests(allTests) {
+  var allTestsLength = allTests.length
+  for (var i = 0; i < allTestsLength; i++)
+  allTests[i]();
 };
