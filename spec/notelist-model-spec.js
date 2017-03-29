@@ -1,4 +1,6 @@
+runTwoTests(testNoteListHasEmptyArray(),testNoteListCreateAndStoreNotes());
 
+runOneTest(testReturnListOfNotes());
 
 
 function testNoteListHasEmptyArray() {
@@ -16,5 +18,5 @@ function testReturnListOfNotes() {
   var noteList = new NoteList();
   noteList.createNote("Hello");
   assert.isTrue(noteList.returnList() === noteList.list);
-  i
+  
 }
